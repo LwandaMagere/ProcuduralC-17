@@ -2,6 +2,7 @@
 #include <iostream>
 int main()
 {
+    using namespace std;
     int rats = 101;
     int & rodents = rats; // rodent is a reference
 
