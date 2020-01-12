@@ -14,6 +14,8 @@ int main()
     cout << "How many linies of code do you need? ";
     cin >> code;
     cout << "Here's Betsy's estimate:" << endl;
+    estimate(code, betsy);
+    cout << "Here's Pam's estimate:" << endl;
     estimate(code, pam);
     return 0;
 }
