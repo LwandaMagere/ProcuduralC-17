@@ -35,7 +35,7 @@
             return 0;
         }
         template <typename T>
-        void Swap(T &a, T &b)
+        void Swap(T &a, T &b) // general version
         {
             T temp;
             temp = a;
