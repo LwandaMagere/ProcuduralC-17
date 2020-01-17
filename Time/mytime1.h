@@ -5,7 +5,7 @@
 class Time 
 {
     private:
-        int hour;
+        int hours;
         int minutes;
     public:
         Time();
