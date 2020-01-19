@@ -45,3 +45,6 @@ void callme2(StringBad sb)
     cout << "String passed by value:\n";
     cout << "\"" << sb << "\"\n";
 }
+
+// The various nonstandard characters that appear in the output will vary from system to
+// system; they are one of the signs that StringBad deserves to be called bad.
