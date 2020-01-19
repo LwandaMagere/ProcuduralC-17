@@ -26,7 +26,7 @@ class String
         friend bool operator<(const String &st, const String &st2);
         friend bool operator>(const String &st1, const String &st2);
         friend bool operator==(const String &st, const String &st2);
-        friend ostream & operator<<(ostream & os, const String st);
+        friend ostream & operator<<(ostream & os, const String &st);
         friend istream & operator>>(istream & is, String & st);
         // static function
         static int HowMany();
