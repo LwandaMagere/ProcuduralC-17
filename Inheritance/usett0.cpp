@@ -4,6 +4,8 @@
 
 int main()
 {
+    int n;
+    n = 5;
     using std::cout;
     TableTennisPlayer player1("Chuck", "Blizzard", true);
     TableTennisPlayer player2("Tara", "Boomdea", false);
