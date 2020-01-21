@@ -1,11 +1,11 @@
-// bank account class methods
+// brass.cpp bank account class methods
 #include <iostream>
 #include "brass.h"
 using std::cout;
 using std::endl;
 using std::string;
 
-//formating stuff
+// formating stuff
 typedef std::ios_base::fmtflags format;
 typedef std::streamsize precis;
 format setFormat();
@@ -26,7 +26,7 @@ void Brass::Deposit(double amt)
         cout << "Negative deposit not allowed; "
             << "deposit is cancelled.\n";
     else 
-        balance += amt;
+        balance = balance + amt;
 }
 
 void Brass::Withdraw(double amt)
@@ -36,19 +36,19 @@ void Brass::Withdraw(double amt)
     precis prec = cout.precision(2);
 
     if (amt < 0)
-        cout << "Withdrawal amount must be positive;"
+        cout << "Withdrawal amount must be positive; "
             << "withdrawal canceled.\n";
-    else if ( amt <= balance)
+    else if (amt <= balance)
         balance -= amt;
     else 
-        cout << "withdrawal amount of $" << amt
-            << "exceeds your balance.\n"
+        cout << "Withdrawal amount of $" << amt
+            << " exceeds your balance.\n"
             << "Withdrawal canceled.\n";
-        restore(initialState, prec);
-
+    restore(initialState, prec);
+    
 }
 
-double Brass::Balance() const 
+double Brass::Balance() const
 {
     return balance;
 }
@@ -74,16 +74,16 @@ BrassPlus::BrassPlus(const string & s, long an, double bal, double ml, double r)
 
 BrassPlus::BrassPlus(const Brass & ba, double ml, double r) : Brass(ba) // uses implicit copy constructor
 {
-    maxLoan = ml;
-    owesBank = 0.0;
-    rate = r;
+maxLoan = ml;
+owesBank = 0.0;
+rate = r;
 }
-
 // redefine how ViewAcct() works
 void BrassPlus::ViewAcct() const
 {
     // set up ###.## format
     format initialState = setFormat();
+
     precis prec = cout.precision(2);
     Brass::ViewAcct();
     // display base portion
@@ -102,7 +102,7 @@ void BrassPlus::Withdraw(double amt)
     precis prec = cout.precision(2);
     double bal = Balance();
     if (amt <= bal)
-          Brass::Withdraw(amt);
+        Brass::Withdraw(amt);
     else if ( amt <= bal + maxLoan - owesBank)
     {
         double advance = amt - bal;
@@ -120,9 +120,9 @@ void BrassPlus::Withdraw(double amt)
 format setFormat()
 {
     // set up ###.## format
-    return cout.setf(std::ios_base::fixed, std::ios_base::floatfiedl);
+    return cout.setf(std::ios_base::fixed,
+    std::ios_base::floatfield);
 }
-
 void restore(format f, precis p)
 {
     cout.setf(f, std::ios_base::floatfield);
