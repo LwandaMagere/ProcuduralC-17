@@ -74,9 +74,9 @@ BrassPlus::BrassPlus(const string & s, long an, double bal, double ml, double r)
 
 BrassPlus::BrassPlus(const Brass & ba, double ml, double r) : Brass(ba) // uses implicit copy constructor
 {
-maxLoan = ml;
-owesBank = 0.0;
-rate = r;
+    maxLoan = ml;
+    owesBank = 0.0;
+    rate = r;
 }
 // redefine how ViewAcct() works
 void BrassPlus::ViewAcct() const
