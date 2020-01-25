@@ -7,7 +7,7 @@ class Stonewt
         enum {Lbs_per_stn = 14};
         int stone;
         double pds_left;
-        double pound;
+        double pounds;
     public:
         Stonewt(double lbs); // construct from double pounds
         Stonewt(int stn, double lbs); // construct from double pounds
