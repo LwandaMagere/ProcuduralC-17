@@ -38,18 +38,18 @@ int Queue::queuecount() const
 // Add item to queue
 bool Queue::enqueue(const Item & item)
 {
-    if (isfull)
+    if (isfull())
         return false;
     Node * add = new Node; // create node
     // on failure, new throws std::bad_alloc exception
     add->item = item; // set node pointers
-    add->next = NULL; 
+    add->next = NULL;// or nullptr;
     items++;
     if (front == NULL) // if queue is empty,
-        front = add;   // place item at front
-    else 
+        front = add; // place item at front
+    else
         rear->next = add; // else place at rear
-    rear = add;    // have rear point to new node
+    rear = add;  // have rear point to new node
     return true;
 }
 
