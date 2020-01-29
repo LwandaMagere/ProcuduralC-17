@@ -69,15 +69,17 @@ BrassPlus::BrassPlus(const string & s, long an, double bal, double ml, double r)
     rate = r;
 }
 
-BrassPluss::BrassPlus(const Brass & ba, double ml, double r) : Brass(ba) // uses implicit constructor
+BrassPlus::BrassPlus(const Brass & ba, double ml, double r)
+: Brass(ba)
+// uses implicit copy constructor
 {
-    maxLoan = ml;
-    owesBank = 0.0;
-    rate = r;
+maxLoan = ml;
+owesBank = 0.0;
+rate = r;
 }
 
 // redefine how ViewAcct() works
-void BrassPluss::ViewAcct()
+void BrassPlus::ViewAcct()
 {
     // set up ###.## format
     format initialState = setFormat();
