@@ -4,25 +4,30 @@
 
 int main()
 {
-    using std::cout;
+  using std::cout;
     using std::endl;
-    Time planning;
-    Time coding(2, 40);
-    Time fixing(5, 55);
+    Time weeding(4, 35);
+    Time waxing(2, 47);
     Time total;
-
-    cout << "planning time = ";
-    planning.Show();
+    Time diff;
+    Time adjusted;
+    cout << "weeding time = ";
+    weeding.Show();
     cout << endl;
-
-    cout << "coding time = ";
-    coding.Show();
+    cout << "waxing time = ";
+    waxing.Show();
     cout << endl;
-
-    total = coding.Sum(fixing);
-    cout << "coding.Sum(fixing) = ";
+    cout << "total work time = ";
+    total = weeding + waxing; // use operator+()
     total.Show();
     cout << endl;
-
+    diff = weeding - waxing;  // use operator-()
+    cout << "weeding time - waxing time = ";
+    diff.Show();
+    cout << endl;
+    adjusted = total * 1.5;   // use operator*()
+    cout << "adjusted work time = ";
+    adjusted.Show();
+    cout << endl;
     return 0;
 }
