@@ -29,5 +29,7 @@ int main()
     cout << "adjusted work time = ";
     adjusted.Show();
     cout << endl;
+
+    
     return 0;
 }
