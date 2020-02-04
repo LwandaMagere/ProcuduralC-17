@@ -2,7 +2,7 @@
 #include <iostream>
 using std::cout;
 using std::endl;
-#include "strngbad.h"
+#include "stringbad.h"
 
 void callme1(StringBad &);
 void callme2(StringBad);

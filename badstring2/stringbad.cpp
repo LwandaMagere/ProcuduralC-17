@@ -1,5 +1,5 @@
 #include <cstring>
-#include "strngbad.h"
+#include "stringbad.h"
 using std::cout;
 
 // initializing static class member
