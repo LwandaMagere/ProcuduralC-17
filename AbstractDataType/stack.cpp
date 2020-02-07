@@ -1,5 +1,5 @@
 // Stack member functions
-#include "stack.h"
+#include "stock.h"
 
 Stack::Stack() // create an empty stack
 {
