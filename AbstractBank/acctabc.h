@@ -19,7 +19,7 @@ class AcctABC
         };
         const std::string & FullName() const {return fullName;}
         long AcctNum() const {return acctNum;}
-        Formatting setFormat() const;
+        Formatting SetFormat() const;
         void Restore(Formatting & f) const;
     public:
         AcctABC(const std::string & s = "Nullbody", long an = -1, double bal = 0.0);
