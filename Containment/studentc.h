@@ -32,7 +32,8 @@ class Student
         friend std::istream & getline(std::istream & is, Student & stu); // 1 line
 
         // output
-        friend std::ostream operator<<(std::ostream & os, const Student & stu);
+        friend std::ostream & operator<<(std::ostream & os, const Student & stu);
+        
 
 };
 
