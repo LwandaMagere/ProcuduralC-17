@@ -9,17 +9,17 @@ using std::string;
 double Student::Average()const
 {
     if (scores.size() > 0)
-        return scores.sum() /scores.size();
+        return scores.sum()/scores.size();
     else 
         return 0;
 }
 
-const string & Student::Name() const
+const string & Student::Name()const
 {
     return name;
 }
 
-double & Student::operator[](int i)
+double & Student::operator[](int i) 
 {
     return scores[i]; // use valarray<double>::operator[]()
 }
@@ -29,7 +29,7 @@ double Student::operator[](int i) const
     return scores[i];
 }
 
-//private method
+// private method
 ostream & Student::arr_out(ostream & os) const
 {
     int i;
@@ -42,22 +42,24 @@ ostream & Student::arr_out(ostream & os) const
             if (i % 5 == 4)
                 os << endl;
         }
+        if (i % 5 != 0)
+            os << endl;
     }
     else 
-        os << " empty array";
+        os << " empty array ";
     return os;
 }
 
 // friends
 
-// use string version of operator>>()
+//use string version of operator>>()
 istream & operator>>(istream & is, Student & stu)
 {
     is >> stu.name;
     return is;
 }
 
-// use string friend getline(ostream &, const string &)
+// use string friend getline(istream &, const string &)
 istream & getline(istream & is, Student & stu)
 {
     getline(is, stu.name);

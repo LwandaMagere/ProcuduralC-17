@@ -11,7 +11,7 @@ class Student
         typedef std::valarray<double> ArrayDb;
         std::string name; // contained object
         ArrayDb scores; // contained object
-        
+
         // private method for scores output
         std::ostream & arr_out(std::ostream & os) const;
     public:
@@ -25,7 +25,7 @@ class Student
         double Average() const;
         const std::string & Name() const;
         double & operator[](int i);
-        double & operator[](int i) const;
+        double  operator[](int i) const;
         // friends
         // input
         friend std::istream & operator >>(std::istream & is, Student & stu); // 1 word
