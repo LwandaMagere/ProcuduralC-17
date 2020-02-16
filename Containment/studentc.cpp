@@ -5,8 +5,8 @@ using std::endl;
 using std::istream;
 using std::string;
 
-//public methods
-double Student::Average()const
+// public methods
+double Student::Average() const
 {
     if (scores.size() > 0)
         return scores.sum()/scores.size();
@@ -14,12 +14,12 @@ double Student::Average()const
         return 0;
 }
 
-const string & Student::Name()const
+const string & Student::Name() const
 {
     return name;
 }
 
-double & Student::operator[](int i) 
+double & Student::operator[](int i)
 {
     return scores[i]; // use valarray<double>::operator[]()
 }
@@ -42,8 +42,6 @@ ostream & Student::arr_out(ostream & os) const
             if (i % 5 == 4)
                 os << endl;
         }
-        if (i % 5 != 0)
-            os << endl;
     }
     else 
         os << " empty array ";
@@ -51,8 +49,7 @@ ostream & Student::arr_out(ostream & os) const
 }
 
 // friends
-
-//use string version of operator>>()
+// use string version of operator>>()
 istream & operator>>(istream & is, Student & stu)
 {
     is >> stu.name;
@@ -69,7 +66,7 @@ istream & getline(istream & is, Student & stu)
 // use string version of operator<<()
 ostream & operator<<(ostream & os, const Student & stu)
 {
-    os << "Scores for " << stu.name << ":\n";
+    os << "Scores for " << stu.name << endl;
     stu.arr_out(os); // use private method for scores
     return os;
 }
