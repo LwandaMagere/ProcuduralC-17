@@ -26,7 +26,7 @@ class Student : private std::string, private std::valarray<double>
         // friend
         // input
         friend std::istream & operator>>(std::istream & is, Student & stu); // 1 word
-        friend std::istream & getlline( std::istream & is, const Student & stu);
+        friend std::istream & getline( std::istream & is, const Student & stu);
 
         // output
         friend  std::ostream & operator<<(std::ostream & os, const Student & stu);
