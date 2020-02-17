@@ -53,16 +53,15 @@ void Singer::Set()
     int i;
     for (i = 0; i < Vtypes; i++)
     {
-    cout << i << ": " << pv[i] << " ";
-    if ( i % 4 == 3)
-        cout << endl;
-    }
-    if (i % 4 != 0)
-        cout << endl;
-    while (cin >> voice && (voice < 0 || voice >= Vtypes) )
+        cout << i << ": " << pv[i] << " ";
+        if (i % 4 == 3)
+            cout << endl;
+        while (cin >> voice && (voice < 0 || voice >= Vtypes))
             cout << "Please enter a value >= 0 and < " << Vtypes << endl;
-    while (cin.get() != '\n')
+        
+        while (cin.get()!= '\n')
             continue;
+    }
 }
 
 void Singer::Show() const
