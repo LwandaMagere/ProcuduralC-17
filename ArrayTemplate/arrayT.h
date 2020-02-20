@@ -5,8 +5,6 @@
 #include <iostream>
 #include <cstdlib>
 
-#include <iostream>
-#include <cstdlib>
 template <class T, int n>
 class ArrayTP
 {
@@ -40,12 +38,12 @@ T & ArrayTP<T,n>::operator[](int i)
 template <class T, int n>
 T ArrayTP<T,n>::operator[](int i) const
 {
-if (i < 0 || i >= n)
-{
-    std::cerr << "Error in array limits: " << i << " is out of range\n";
-    std::exit(EXIT_FAILURE);
-}
-return ar[i];
+    if (i < 0 || i >= n)
+    {
+        std::cerr << "Error in array limits: " << i << " is out of range\n";
+        std::exit(EXIT_FAILURE);
+    }
+    return ar[i];
 }
 
 #endif
