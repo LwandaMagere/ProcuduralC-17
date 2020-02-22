@@ -48,6 +48,7 @@ int main()
     for(int i = 0; i < joints; i++)
         cout << ratings[i].second() << ":\t "
             << ratings[i].first() << endl;
+            
     cout << "Oops! Revised rating:\n";
     ratings[3].first() = "Bertie's Fab Eats";
     ratings[3].second() = 6;
