@@ -55,6 +55,6 @@ bool Stack<Type>::pop(Type & item)
         return true;
     }
     else
-        return false;
+    return false;
 }
 #endif
