@@ -44,7 +44,7 @@ int main()
 {
     cout << "No objects declared: ";
     counts();
-    HasFriend<int> hfi1(10);
+    HasFriend<int> hfil(10);
     cout << "After hfi1 declared: ";
     counts();
     HasFriend<int> hfi2(20);
