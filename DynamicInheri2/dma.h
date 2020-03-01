@@ -14,7 +14,7 @@ class baseDMA
         baseDMA(const baseDMA & rs);
         virtual ~baseDMA();
         baseDMA & operator=(const baseDMA & rs);
-        friend std::ostream operator<<(std::ostream & os, const baseDMA & rs);
+        friend std::ostream & operator<<(std::ostream & os, const baseDMA & rs);
 
 };
 // derived class without DMA  no destructor needed  uses implicit copy constructor
