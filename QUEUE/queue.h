@@ -28,6 +28,7 @@ class Queue
     // private class members
         Node * front; // pointer to front of Queue
         Node * rear; // pointer to the reat of Queue
+        int items;
         const int qsize; // maximum number of items in Queue
     // preemptive definition to prevent public copying
         Queue(const Queue & q) : qsize(0){}
