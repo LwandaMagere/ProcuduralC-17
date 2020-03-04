@@ -36,8 +36,7 @@ class QueueTP
 template <class Item>
 QueueTP<Item>::QueueTP(int qs) : qsize(qs)
 {
-    front =  rear = 0;
-    items = 0;
+    front =  rear = items = 0;
 }
 
 template <class Item>
