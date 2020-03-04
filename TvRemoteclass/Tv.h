@@ -38,7 +38,7 @@ class Remote
     public:
         Remote(int m = Tv::TV) : mode(m){}
         bool volup(Tv & t) { return t.volup();}
-        bool voldown(Tv & t) { return t.voldown();}
+        bool voldown(Tv & t) { return t.voldown();} // nice way to make an inline code
         void onoff(Tv & t) { t.onoff(); }
         void chanup(Tv & t) {t.chanup();}
         void chandown(Tv & t) {t.chandown();}
