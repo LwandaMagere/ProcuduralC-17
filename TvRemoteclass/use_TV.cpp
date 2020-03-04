@@ -24,7 +24,7 @@ int main()
     s58.set_mode();
     grey.set_chan(s58,28);
     cout << "\n58\" settings:\n";
-    s58.settings();
-    
+    s58.settings(); // new thing I've learned
+
     return 0;
 }
