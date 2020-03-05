@@ -9,8 +9,8 @@ int main()
     while (std::cin >> x >> y)
     {
         try{ // start of try block
-            z = hmean(x,y);
-        }  // end of try block
+                z = hmean(x,y);
+            }  // end of try block
         catch (const char * s) // start of exception handler
         {
             std::cout << s << std::endl;
