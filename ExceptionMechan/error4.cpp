@@ -23,7 +23,7 @@ int main()
             cout << "Geometric mean of " << x << " and " << y << " is " << gmean(x,y) << endl;
             cout << "Enter next set of numbers <q to quit>: ";
         }
-        catch (bad_gmean & bg)
+        catch (bad_hmean & bg)
         {
             bg.mesg();
             cout << "Try again.\n";
