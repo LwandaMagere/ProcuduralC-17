@@ -10,6 +10,7 @@ class bad_hmean
         bad_hmean(double a = 0, double b = 0) : v1(a), v2(b){}
         void mesg();
 };
+
 inline void bad_hmean::mesg()
 {
     std::cout << "hmean(" << v1 << ", " << v2 <<"): "
