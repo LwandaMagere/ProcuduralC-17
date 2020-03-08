@@ -23,7 +23,7 @@ bool hmean(double a, double b, double *ans)
 {
     if (a == -b)
     {
-        *ans = DBL_MAX;
+      //  *ans = DBL_MAX;
         return false;
     }
     else
