@@ -21,7 +21,7 @@ const string wordlist[NUM] = {"apiary", "beetle", "cereal",
 
 int main()
 {
-     std::srand(std::time(0));
+    std::srand(std::time(0));
 
     char play;
     cout << "Will you play a word game? <y/n> ";
