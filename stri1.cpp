@@ -20,7 +20,7 @@ int main()
     four = two + three; // overloaded +, =
     cout  << four << endl;
     char alls[] =  "All's well that ends well";
-    string five(alls, 20); // Initializes a string object to the NBTS pointed to by s and continues for n characters, even if it exceeds the size of NBTS
+    string five(alls, 40); // Initializes a string object to the NBTS pointed to by s and continues for n characters, even if it exceeds the size of NBTS
     cout  << five << "!\n";
     string six(alls+6, alls + 10); // Initializes a string object to the values in the range [begin, end) , where begin and end act like pointers and specify locations; the range includes begin and is up to but not including end .
     cout << six << ", ";
