@@ -37,7 +37,7 @@ int main()
              << " letters, and you guess\n" << "one letter at a time. You get " 
              << guesses << " wrong guesses.\n";
         cout << "Your word: " << attempt << endl;
-        
+
         while (guesses > 0 && attempt != target)
         {
             char letter;
@@ -68,12 +68,10 @@ int main()
                 }
             }
             cout << "Your word: " << attempt << endl;
-            if (attempt != target)
-            {
-                if (badchars.length() > 0)
+            if (attempt != target && badchars.length() > 0)
                     cout << "Bad choices: " << badchars << endl;
-                cout << guesses << " bad guesses left\n";
-            }
+            cout << guesses << " bad guesses left\n";
+        
         }
         if (guesses > 0)
             cout << "That's right" << endl;
