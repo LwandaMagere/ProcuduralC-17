@@ -19,10 +19,8 @@ int main()
     using std::cin;
     using std::tolower;
     using std::endl;
-    using std::srand;
-    using std::time;
-
-    srand(time(0));
+   
+    std::srand(std::time(0));
 
     char play;
     cout << "Will you play a word game? <y/n> ";
