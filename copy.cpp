@@ -13,7 +13,7 @@ int main()
     copy(casts, casts + 10, dice.begin());
     cout << "Let the dice be cast!\n";
     // create an ostream iterator
-    ostream_iterator<int, char> out_inter(cout, " ");
+    ostream_iterator<int, char> out_inter(cout);
     // copy from vector to output
     copy(dice.begin(), dice.end(), out_inter);
     cout << endl;
