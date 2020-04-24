@@ -74,8 +74,7 @@ int main()
             {
                 cout << "Bad choices: " << badchars << endl;
                 cout << guesses << " bad guesses left\n";
-            }
-        }
+            }         }
         if (guesses > 0)
             cout << "That's right!" << endl;
         else 
@@ -86,6 +85,6 @@ int main()
         play = tolower(play);
     }
     cout << "Bye" << endl;
-    
+
     return 0;
 }
