@@ -31,7 +31,7 @@ int main()
     cout << endl;
     cout << "Union of A and B:\n";
 
-    set_union(A.begin(), A.end(), B.begin(), B.end(), out);
+    set_union(B.begin(), B.end(), A.begin(), A.end(), out);
 
     cout << endl;
     cout << "Intersection of A and B:\n";
@@ -48,12 +48,12 @@ int main()
     set<string> C;
     cout << "Set C:\n";
 
-    set_union(A.begin(), A.end(), B.begin(), B.end(), insert_iterator<set<string> >(C, C.begin()));
+    set_union(A.begin(), A.end(), B.begin(), B.end(), insert_iterator< set<string> >(C, C.begin()));
     copy(C.begin(), C.end(), out);
 
     cout << endl;
 
-    string s3("grungy");
+     string s3("grungy");
     C.insert(s3);
     
     cout << "Set C after insertion:\n";
@@ -66,4 +66,6 @@ int main()
     copy(C.lower_bound("ghost"), C.upper_bound("spook"), out);
     
     cout << endl;
+
+    return 0;
 }
