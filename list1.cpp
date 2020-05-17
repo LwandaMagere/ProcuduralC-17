@@ -25,16 +25,16 @@ int main()
     for_each(two.begin(), two.end(), outint);
     cout << endl << "List three: ";
     for_each(three.begin(), three.end(), outint);
-    three.remove(2);
+    three.remove(2); // ******************************************************
 
     cout << endl << "List three minus 2s: ";
     for_each(three.begin(), three.end(), outint);
-    three.splice(three.begin(), one);
+    three.splice(three.begin(), one);   //***********************************
     cout << endl << "List three after splice: ";
     for_each(three.begin(), three.end(), outint);
     cout << endl << "List one: ";
     for_each(one.begin(), one.end(), outint);
-    three.unique();
+    three.unique();// ***************************************************************
     cout << endl << "List three after unique: ";
     for_each(three.begin(), three.end(), outint);
     three.sort();
@@ -42,7 +42,7 @@ int main()
     cout << endl << "List three after sort & unique: ";
     for_each(three.begin(), three.end(), outint);
     two.sort();
-    three.merge(two);
+    three.merge(two); // **********************************************
     cout << endl << "Sorted two merged into three: ";
     for_each(three.begin(), three.end(), outint);
     cout << endl;
