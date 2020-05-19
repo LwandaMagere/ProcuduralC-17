@@ -38,5 +38,6 @@
 
      string eight(four, 7, 16); // 7
      cout << eight << " in motion!" << endl;
+     
      return 0;
  }
