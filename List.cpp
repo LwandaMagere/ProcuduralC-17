@@ -1,7 +1,7 @@
 // using a list
 #include <iostream>
 #include <list>
-#include <iterator>
+//#include <iterator>
 #include <algorithm>
 
 void outint(int n){std::cout << n << " ";}
