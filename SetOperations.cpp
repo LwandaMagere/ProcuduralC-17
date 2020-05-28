@@ -28,6 +28,10 @@ int main()
     set_union(A.begin(), A.end(), B.begin(), B.end(), out);
     cout << endl;
 
+    cout << "Intersection of A and B:\n";
+    set_intersection(A.begin(), A.end(), B.begin(), B.end(), out);
+    cout << endl;
+    
     cout << "Difference of A and B:\n";
 
     set_difference(A.begin(), A.end(), B.begin(), B.end(), out);
