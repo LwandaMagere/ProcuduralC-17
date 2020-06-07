@@ -20,7 +20,7 @@ int main()
     for (i = 0; i < size; i++)
         numbers[i] = data[i];
     valarray<double> sq_rts(size);
-    sq_rts = sqrt(numbers);
+    sq_rts = sqrt(numbers);    /////////////////////////
     valarray<double> results(size);
     results = numbers + 2.0 * sq_rts;
     cout.setf(ios_base::fixed);
