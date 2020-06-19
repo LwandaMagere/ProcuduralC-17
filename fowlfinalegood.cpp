@@ -8,11 +8,11 @@ int main()
 
     shared_ptr<string> films[5] = 
     {
-        auto_ptr<string> (new string("Fowl Ball")),
-        auto_ptr<string> (new string("Duck Walks")),
-        auto_ptr<string> (new string("Chicken Runs")),
-        auto_ptr<string> (new string("Turkey Errors")),
-        auto_ptr<string> (new string("Goose Eggs"))
+       shared_ptr<string> (new string("Fowl Ball")),
+       shared_ptr<string> (new string("Duck Walks")),
+       shared_ptr<string> (new string("Chicken Runs")),
+       shared_ptr<string> (new string("Turkey Errors")),
+       shared_ptr<string> (new string("Goose Eggs"))
     };
 
     shared_ptr<string> pwin;
