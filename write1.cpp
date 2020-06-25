@@ -13,7 +13,7 @@ int main()
 
     int len = std::strlen(state2);
     cout << "Increasing loop index:\n";
-    for (int i = 1; i <= len; i++)
+    for (int i = 0; i <= len; i++)
     {
         cout.write(state2, i);
         cout << endl;
@@ -23,9 +23,14 @@ int main()
     for (int i = len; i > 0; i--)
         cout.write(state2,i) << endl;
 
+   
+
     // exceed string length
     cout << "Exceeding string length:\n";
-    cout.write(state2, len + 5) << endl;
-    
+    cout.write(state2, len + 5) << endl; 
+
+     long val = 560031841;
+    cout.write((char *)&val,sizeof(long));
+
     return 0;
 }
