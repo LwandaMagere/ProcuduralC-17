@@ -17,6 +17,6 @@ int main()
     }
 
     std::cout << "\nPlease exuse the slight confusion\n";
-    
+
     return 0;
 }
