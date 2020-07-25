@@ -1,4 +1,4 @@
-// using strurcture reference
+// using structure reference
 #include <iostream>
 #include <string>
 
