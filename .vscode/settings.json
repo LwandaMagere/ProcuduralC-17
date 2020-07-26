@@ -44,6 +44,9 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "valarray": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "functional": "cpp",
+        "set": "cpp",
+        "iomanip": "cpp"
     }
 }
