@@ -17,7 +17,18 @@ int main()
 {
     using namespace std;
 
-    int things[6] = {13, 31, 103, 301, 310, 130};
+    int * dado  = new int[18];
+    int Oduor[18] {0,1,2,3,4,5,6,7,8};
+    cout << "This is Automatic " << Oduor << endl;
+    cout << "This manual " <<  &Oduor[0] << endl;
+    cout << "Check this out " << *(Oduor + 2) << endl;
+    
+    cout <<  sizeof Oduor << endl;
+    cout << sizeof dado << endl;
+
+    
+    
+   /* int things[6] = {13, 31, 103, 301, 310, 130};
     struct debts mr_E[3] = 
     {
         {"Ima Wolfe", 2400.0},
@@ -36,7 +47,7 @@ int main()
     ShowArray(things, 6);
     cout << "Listing Mr. E's debts:\n";
 // pd is an array of pointers to double
-    ShowArray(pd, 3); // uses template B (more specialized)
+    ShowArray(pd, 3); // uses template B (more specialized)*/
     return 0;
 }
 
