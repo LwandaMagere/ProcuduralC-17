@@ -17,11 +17,16 @@ int main()
 {
     using namespace std;
 
+    int arr[5] {0,1,2,3,4};
+    cout << "*(arr + 1) = " << *(arr + 1) << endl;
+    cout << " arr + 1 = " << arr + 1 << endl;
     int * dado  = new int[18];
     int Oduor[18] {0,1,2,3,4,5,6,7,8};
     cout << "This is Automatic " << Oduor << endl;
     cout << "This manual " <<  &Oduor[0] << endl;
     cout << "Check this out " << *(Oduor + 2) << endl;
+
+    
     
     cout <<  sizeof Oduor << endl;
     cout << sizeof dado << endl;
