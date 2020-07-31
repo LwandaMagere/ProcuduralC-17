@@ -12,7 +12,12 @@ struct debts
     char name[50];
     double amount;
 };
-
+ template<typename T1, typename T2>
+ auto gt(T1 x, T2 y)->decltype(x + y)
+ {
+     ...
+     return x + y;
+ }
 int main()
 {
     using namespace std;
