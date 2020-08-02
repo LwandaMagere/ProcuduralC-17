@@ -30,7 +30,7 @@ int main()
     while (inFile.good()) // while input good and not at EOF
     {
         ++count; 
-        sum += value;
+        sum = sum  + value;
         inFile >> value; // get next value
     }
     if (inFile.eof())
