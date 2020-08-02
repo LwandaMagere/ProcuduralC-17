@@ -7,6 +7,9 @@ int main()
 {
     using namespace std;
 
+    int *p;
+    cout << "This is a pointer address -> " <<  p << endl;
+
     int cookies[ArSize] = {1,2,4,8,16,32,64,128};
     int sum = sum_arr(cookies, cookies + ArSize);
     cout << "Total cookies eaten: " << sum << endl;
