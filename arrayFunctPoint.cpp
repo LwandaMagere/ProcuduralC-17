@@ -15,9 +15,9 @@ int main()
     const double * (*p1)(const double *, int) = f1;
     auto p2 = f2; // C++11 automatic type deduction
     cout << "Using pointers to functions:\n";
-    cout << " Address Value\n";
-    cout << (*p1)(av,3) << ": " << *(*p1)(av,3) << endl;
-    cout << p2(av,3) << ": " << *p2(av,3) << endl;
+    cout << "Address Value\n";
+    cout << p1(av,3) << ": " << *p1(av,3) << endl;
+    cout << (*p2)(av,3) << ": " << *(*p2)(av,3) << endl;
 
     const double * (*pa[3])(const double *, int)  {f1,f2,f3};
     auto pb = pa;
