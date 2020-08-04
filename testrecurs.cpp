@@ -11,8 +11,8 @@ int main()
 
 void again(int n)
 {
-    cout << n << "My name is Dado Oduor Onyango!" << endl;
+    cout << n << " My name is Dado Oduor Onyango!" << endl;
     if (n > 0)
         again(n - 1);
-    cout << n << "Hii ni kutoka bana!" << endl;
+    cout << n << " Hii ni kutoka bana!" << endl;
 }
