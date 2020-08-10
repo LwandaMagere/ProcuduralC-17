@@ -39,3 +39,13 @@ std::ostream & operator<<(std::ostream & os, const StringBad & st)
     return os;
 }
 
+StringBad::StringBad(const StringBad & s)
+{
+     len = std::strlen(s);
+    str = new char[len + 1];
+    std::strcpy(str, s); // initialize a pointer
+    num_strings++;
+    cout << num_strings << ": \"" << str
+         << "\" object created\n"; // For Your Information
+}
+

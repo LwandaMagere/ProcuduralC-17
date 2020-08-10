@@ -13,6 +13,8 @@ class StringBad
         StringBad(const char * s); // constructor
         StringBad();
         ~StringBad();
+        StringBad(const StringBad & st);
+        StringBad operator=(const StringBad & st);
         friend std::ostream & operator<<(std::ostream &, const StringBad & st);
 };
 #endif

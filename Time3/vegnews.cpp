@@ -15,6 +15,8 @@ int main()
         StringBad headline1("Celery Stalks at Midnight");
         StringBad headline2("Lettuce Prey");
         StringBad sports("Spinach Leaves Bowl for Dollars");
+        StringBad Dado("Dado Oduor Onyango");
+        StringBad Oduor;
         cout << "headline1: " << headline1 << endl;
         cout << "headline2: " << headline2 << endl;
         cout << "sports: " << sports << endl;
@@ -33,7 +35,7 @@ int main()
 
     }
     cout << "End of main()\n";
-    
+
     return 0;
 }
 
