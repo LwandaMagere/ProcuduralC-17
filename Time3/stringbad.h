@@ -6,13 +6,13 @@
 class StringBad
 {
     private:
-        char * str;  // pointer to a string
+        char * str; // pointer to a string
         int len;
         static int num_strings; // number of objects
     public:
-        StringBad(const char * s);
+        StringBad(const char * s); // constructor
         StringBad();
         ~StringBad();
-        friend std::ostream & operator<<(std::ostream & os, const StringBad & st);
+        friend std::ostream & operator<<(std::ostream &, const StringBad & st);
 };
 #endif
