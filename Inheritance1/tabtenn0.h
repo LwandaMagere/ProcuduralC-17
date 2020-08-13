@@ -2,6 +2,7 @@
 #ifndef TABTENNIS_H_
 #define TABTENNIS_H_
 #include <string>
+#include <iostream>
 using std::string;
 // simple base class
 class TabTennisPlayer
