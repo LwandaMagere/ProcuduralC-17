@@ -33,5 +33,5 @@ class BrassPlus : public Brass
         void ResetMax(double m) {maxLoan =  m;}
         void ResetRate(double r){ rate = r;}
         void ResetOwes(){owesBank = 0;}
-}
+};
 #endif
