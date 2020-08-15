@@ -12,15 +12,15 @@ class AcctABC
         long acctNum;
         double balance;
     protected:
-        struct Formating
+        struct Formatting
         {
             std::ios_base::fmtflags flag;
             std::streamsize pr;
         };
         const std::string & FullName() const {return fullName;}
         long AcctNum() const {return acctNum;}
-        Formating SetFormat() const;
-        void Restore(Formating & f) const;
+        Formatting SetFormat() const;
+       void Restore(Formatting & f) const;
     public:
         AcctABC(const std::string & s = "Nullbody", long an = -1, double bal = 0.0);
         void Deposit(double amt);
@@ -35,7 +35,7 @@ class Brass : public AcctABC
 {
     public:
         Brass(const std::string & s = "Nullbody", long an = -1, double bal = 0.0) : AcctABC(s, an, bal){}
-        virtual void Withdra(double amt);
+        virtual void Withdraw(double amt);
         virtual void ViewAcct() const;
         virtual ~Brass(){}
 }
