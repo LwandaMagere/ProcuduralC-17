@@ -30,7 +30,7 @@ int main()
         while (cin >> kind && (kind != '1' && kind != '2'))
             cout <<"Enter either 1 or 2: ";
         if (kind == '1')
-            p_clients[i] =  new Brass(temp, tempnum, tembal);
+            p_clients[i] =  new Brass(temp, tempnum, tempbal);
         else
         {
             double tmax, trate;
