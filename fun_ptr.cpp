@@ -35,5 +35,5 @@ void estimate(int lines, double (*pf)(int))
 {
     using namespace std;
     cout << lines << " lines will take ";
-    cout << (*pf)(lines) << " hour(s)\n";
+    cout << pf(lines) << " hour(s)\n";
 }
