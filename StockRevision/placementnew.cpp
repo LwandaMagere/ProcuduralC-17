@@ -48,7 +48,10 @@ int main()
     delete pc2;
     delete pc4;
     delete [] buffer;
+
+    pc3->~JustTesting(); // destroy objects pointed to by pc3
+    pc1->~JustTesting(); // destroy object pointed to by pc1
     cout << "Done\n";
-    
+
     return 0;
 }
