@@ -14,7 +14,7 @@ class Student: private string, private valarray<double>
 {
     private:
         typedef valarray<double> ArrayDb;
-        std::ostream & arr_out(std::ostream & os) const;
+        ostream & arr_out(ostream & os) const;
     public:
         Student(): string("Null Student"), ArrayDb(){}
         explicit Student(const string & s): string(s), ArrayDb(){}
