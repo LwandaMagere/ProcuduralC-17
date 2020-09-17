@@ -2,9 +2,11 @@
 #ifndef WORKER_H_
 #define WORKER_H_
 
+#include <string>
+
 using std::string;
 
-#include <string>
+
 
 class Worker // an abstract base class
 {
