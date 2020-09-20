@@ -2,7 +2,7 @@
 #ifndef STACK_H_
 #define STACK_H_
 
-template <typename T>
+template <class T>
 class Stack 
 {
     private:
@@ -23,10 +23,16 @@ Stack<T>::Stack()
     top = 0;
 }
 
-template <typename T>
-bool Stack<T>::isfull()
+template <class Type>
+bool Stack<Type>::isempty()
 {
-    return top == MAX;
+return top == 0;
+}
+
+template <class Type>
+bool Stack<Type>::isfull()
+{
+return top == MAX;
 }
 
 template <class T>
@@ -41,7 +47,7 @@ bool Stack<T>::push(const T & item)
         return false;
 }
 
-template <typename T>
+template <class T>
 bool Stack<T>::pop(T & item)
 {
     if (top > 0)
