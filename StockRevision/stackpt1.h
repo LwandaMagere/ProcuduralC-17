@@ -15,6 +15,7 @@ class Stack
         Stack(const Stack & st);
         ~Stack(){ delete [] items;}
         bool isfull(){return top == stacksize;}
+        bool isempty() { return top == 0; }
         bool push(const T & item); // add
         bool pop(T & item); // pop top into item
         Stack & operator=(const Stack & st);
