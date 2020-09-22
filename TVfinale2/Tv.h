@@ -19,7 +19,7 @@ class Tv
         void chandown();
         void set_mode(){mode = (mode == Antenna) ? Cable : Antenna;}
         void set_input(){input = (input == TV)? DVD : TV;}
-        void setting() const; // display all setting
+        void settings() const; // display all setting
     private:
         int state;  // on or off
         int volume; // assumed to be digitized
