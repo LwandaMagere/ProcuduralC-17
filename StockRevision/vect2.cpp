@@ -38,21 +38,20 @@ int main()
         books.erase(books.begin() + 1, books.begin() + 3);
         cout << "After erasure:\n";
         for (pr = books.begin(); pr != books.end(); pr++)
-        ShowReview(*pr);
-        // insert 1 item
-        books.insert(books.begin(), oldlist.begin() + 1,
-        oldlist.begin() + 2);
+            ShowReview(*pr);
+         // insert 1 item
+        books.insert(books.begin(), oldlist.begin() + 1, oldlist.begin() + 2);
         cout << "After insertion:\n";
         for (pr = books.begin(); pr != books.end(); pr++)
-        ShowReview(*pr);
+            ShowReview(*pr);
     }
     books.swap(oldlist);
     cout << "Swapping oldlist with books:\n";
     for (pr = books.begin(); pr != books.end(); pr++)
-    ShowReview(*pr);
+        ShowReview(*pr);
     }
     else
-    cout << "Nothing entered, nothing gained.\n";
+        cout << "Nothing entered, nothing gained.\n";
     return 0;
 }
 
