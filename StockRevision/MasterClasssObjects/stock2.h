@@ -19,6 +19,7 @@ class Stock
         void buy(long num, double price);
         void sell(long num, double price);
         void show()const;
+        void update(double price);
         const Stock & topval(const Stock & s) const;
 };
 #endif
