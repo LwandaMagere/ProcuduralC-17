@@ -33,10 +33,13 @@ int main()
                      break;
             case 'P':
             case 'p': if (st.isempty())
-                        cout << "stack already empy\n";
+                        cout << "stack already empty\n";
                       else{
+                           
                           st.pop(po);
                           cout << "PO #" << po << " popped\n";
+                         
+                          
                       }
                       break;
         }
