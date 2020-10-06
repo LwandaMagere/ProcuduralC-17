@@ -22,7 +22,7 @@ int main()
     fixing.Show();
     cout << endl;
 
-    total = coding.Sum(fixing);
+    total = coding + fixing;
     total.Show();
     cout << endl;
     return 0;
