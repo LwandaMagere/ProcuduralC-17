@@ -47,6 +47,9 @@
         "list": "cpp",
         "functional": "cpp",
         "set": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "bit": "cpp"
     }
 }
