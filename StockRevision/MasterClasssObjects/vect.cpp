@@ -168,5 +168,4 @@ namespace VECTOR
             os << "Vector object mode is invalid";
         return os;
     }
-}
-// end namespace VECTOR
+} // end namespace VECTOR
