@@ -153,16 +153,16 @@ namespace VECTOR
         return a * n;
     }
 
-    // display rectangular coordinates if mode is RECT,
+   // display rectangular coordinates if mode is RECT,
     // else display polar coordinates if mode is POL
     std::ostream & operator<<(std::ostream & os, const Vector & v)
     {
-
         if (v.mode == Vector::RECT)
             os << "(x,y) = (" << v.x << ", " << v.y << ")";
         else if (v.mode == Vector::POL)
         {
-            os << "(m,a) = (" << v.mag << ", " << v.ang * Rad_to_deg << ")";
+            os << "(m,a) = (" << v.mag << ", "
+            << v.ang * Rad_to_deg << ")";
         }
         else
             os << "Vector object mode is invalid";

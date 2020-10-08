@@ -9,6 +9,8 @@ namespace VECTOR
     {
         public:
             enum Mode {RECT, POL};
+            // RECT for rectangular, POL Polar mode
+   
         private:
             double x;
             double y;
@@ -20,6 +22,8 @@ namespace VECTOR
             void set_ang();
             void set_x();
             void set_y();
+
+
         public:
             Vector();
             Vector(double n1, double n2, Mode form = RECT);
@@ -38,9 +42,10 @@ namespace VECTOR
             Vector operator*(double n) const;
         // friends
             friend Vector operator*(double n, const Vector & a);
-            friend std::ostream & operator<<(std::ostream os, const Vector & v);
+            friend std::ostream & operator<<(std::ostream & os, const Vector & v);
 
 
     };
 }  // end of namespace
+
 #endif
