@@ -2,6 +2,7 @@
 #ifndef VECTOR_H_
 #define VECTOR_H_
 #include <iostream>
+
 namespace VECTOR 
 {
     class Vector

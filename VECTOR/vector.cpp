@@ -1,6 +1,6 @@
 //  -- methods for the Vector class
 #include <cmath>
-#include "vect.h"   // includes <iostream>
+#include "vector.h"   // includes <iostream>
 using std::sqrt;
 using std::sin;
 using std::cos;

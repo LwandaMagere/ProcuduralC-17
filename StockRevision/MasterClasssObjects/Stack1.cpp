@@ -1,6 +1,7 @@
 // Stack member functions
 #include "Stack1.h"
 
+
 Stack::Stack()
 {
     top = 0;
@@ -18,6 +19,7 @@ bool Stack::isfull() const
 
 bool Stack::push(const Item & item)
 {
+    
     if (top < MAX)
     {
         items[++top] = item;
