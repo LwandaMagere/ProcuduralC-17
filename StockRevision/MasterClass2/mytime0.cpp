@@ -40,6 +40,16 @@ Time Time::Sum(const Time & t) const
     return sum;
 }
 
+Time Time::operator-(const Time & t) const
+{
+    Time diff;
+    int tot1, tot2;
+    tot1 = t.minutes + 60 * t.minutes;
+    tot2 = minutes + 60 * minutes;
+    diff.minutes = (tot2 - tot1);
+    diff.hours = (tot2 - tot1) / 60;
+}
+
 void Time::Show()const
 {
     std::cout << hours << " hours, " << minutes << " minutes";
