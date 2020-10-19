@@ -5,7 +5,7 @@ int main()
     {
         using std::cout;
         cout << "Using constructors to create new objects\n";
-        Stock stock1("NanoSmart", 12, 20.0);   // syntax 1
+        Stock stock1("NanoSmart", -12, -20.0);   // syntax 1
         stock1.show();
         Stock stock2 = Stock("Boffo Objects", 2, 2.0); // syntax 2
         stock2.show();
