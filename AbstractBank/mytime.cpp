@@ -52,10 +52,10 @@ Time Time::operator-(const Time & t) const
 
 }
 
-Time Time::operator*(double mult) const
+Time operator*(double mult, const Time & t) 
 {
     Time result;
-    long totalminutes = hours * mult * 60 + minutes * mult;
+    long totalminutes = mult * t.hours * 60 + mult *   t.minutes;
     result.hours = totalminutes / 60;
     result.minutes = totalminutes % 60;
     return result;

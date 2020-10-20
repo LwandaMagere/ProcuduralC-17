@@ -1,6 +1,9 @@
 // Time class after operator overloading
 #ifndef MYTIME
 #define MYTIME
+#include <iostream>
+
+using std::cout;
 
 class Time
 {
@@ -15,7 +18,7 @@ class Time
         void Reset(int h = 0, int m = 0);
         Time operator+(const Time & t) const;
         Time operator-(const Time & t) const;
-        Time operator*(double n) const;
+        friend Time operator*(double mult, const Time & t);
         void Show() const;
 };
 
