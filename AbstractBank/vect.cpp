@@ -148,6 +148,7 @@ namespace VECTOR
     {
         return a * n;
     }
+    
     // display rectangular coordinates if mode is RECT,
     // else display polar coordinates if mode is POL
     std::ostream & operator<<(std::ostream & os, const Vector & v)
