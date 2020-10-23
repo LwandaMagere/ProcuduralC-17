@@ -1,6 +1,7 @@
 // class definition for the stack ADT
 #ifndef STACK1
 #define STACK1
+#include <iostream>
 
 typedef unsigned long Item;
 
