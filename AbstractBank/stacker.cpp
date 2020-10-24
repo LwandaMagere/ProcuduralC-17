@@ -9,6 +9,7 @@ int main()
     Stack st; // create an empty stack
     char ch;
     unsigned long po;
+    
     cout << "Please enter A to add a purchase order,\n"
         << "P to process a PO, or Q to quit.\n";
     while (cin >> ch && toupper(ch) != 'Q')
@@ -44,3 +45,5 @@ int main()
 }
 cout << "Bye\n";
 return 0;
+
+}
