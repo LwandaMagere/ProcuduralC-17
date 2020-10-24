@@ -6,7 +6,7 @@ class Time
 {
 private:
     int hours;
-    int mminutes;
+    int minutes;
 public:
     Time();
     Time(int h, int m = 0);
