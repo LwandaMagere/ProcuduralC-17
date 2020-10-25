@@ -11,6 +11,9 @@ int main()
     Stonewt wolfe(285.7);
     Stonewt taft(21, 8);
 
+    Stonewt poppins(9, 2.8);
+    double p_wt = poppins;
+
     cout << "The celebrity weighed ";
     incognito.show_stn();
     cout << "The detective weighed ";

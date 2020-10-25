@@ -31,3 +31,14 @@ void Stonewt::show_lbs() const
 {
     cout << pounds << " pounds\n";
 }
+
+// conversion functions
+Stonewt::operator int() const
+{
+    return int (pounds + 0.5);
+}
+
+Stonewt::operator double() const
+{
+    return pounds;
+}
